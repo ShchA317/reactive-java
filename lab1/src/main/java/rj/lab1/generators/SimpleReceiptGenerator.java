@@ -77,7 +77,7 @@ public class SimpleReceiptGenerator {
         List<Item> items = new ArrayList<>();
         for (int i = 0; i < count; i++) {
             Item item = new Item();
-            item.setName("Item-" + RandomStringUtils.randomAlphanumeric(4));
+            item.setName("Item-" + RandomStringUtils.randomAlphanumeric(2));
             item.setQuantity(RandomUtils.nextInt(1, 5));
             item.setUnitPrice(RandomUtils.nextDouble(minPrice, maxPrice));
             item.setTotalPrice(item.getQuantity() * item.getUnitPrice());
